@@ -1,0 +1,16 @@
+server:
+    port: 8081
+    servlet:
+        context-path: /controle
+
+spring:
+    datasource:
+        url: jdbc:postgresql://172.17.0.3:5432/postgres
+        username: postgres
+        password: 123456
+    jpa:
+        show-sql: true
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+        generate-ddl: true
+        hibernate:
+            ddl-auto: update
